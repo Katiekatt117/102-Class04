@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        h1{
+            background-color: aqua;
+            color: pink;
+        }
+        .p1{
+            background-color: blueviolet;
+            color: plum;
+        }
+        .p2{
+            background-color: aquamarine;
+            color: hotpink;
+        }
+        .p3{
+            background-color: rgb(0, 255, 38);
+            color: rgb(255, 8, 66);
+        }
+        .p4{
+            background-color: rgb(234, 33, 234);
+            color: rgb(138, 35, 52);
+        }
+       </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>Class 1 Lab</h1>
+        <p class="p1" id="name">What is your name?</p>
+        <p class="p2" id="show">What is your favorite show?</p>
+        <p class="p3" id="animal">What is your favorite animal?</p>
+        <p class="p4" id="color">What is your favorite color?</p>
+        </main>
+        <footer></footer>
+        
+        <script>
+            let name = "";
+            
+            function whoyou(){
+                name = prompt("What is your name?(❁´◡`❁)");
+                if(name !== ""){
+                    alert("Hiya!☆*: .｡. o(≧▽≦)o .｡.:*☆" + name);
+                    document.getElementById("name").innerHTML = "HI" + name + "(～￣▽￣)～";
+                } else {
+                    alert("O_O Input Needed");
+                }
+            }
+            
+            let show = ""
+            function showzzz(){
+                show = prompt("What is your favorite show?(o゜▽゜)o☆");
+                if(show !== ""){
+                    alert("Ooo very interesting!(～￣▽￣)～" + show);
+                    document.getElementById("show").innerHTML = "COOL" + "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧";
+                } else {
+                    alert("(ToT)/~~~ Input Needed");
+                }
+            }
+            let animal = "";
+
+            function animalzzz(){
+                animal = prompt("What is your favorite animal? (❤️ ω ❤️)");
+                if(animal !== ""){
+                    alert("Oh, I like those too!o(*°▽°*)o" + animal);
+                    document.getElementById("animal").innerHTML = "AWESOME" + "ヽ(✿ﾟ▽ﾟ)ノ";
+                } else {
+                    alert("(ToT)/~~~ Input Needed")
+                }
+            }
+            let color = "";
+
+            function colorzzz(){
+                color = prompt("What is your favorite color?(✿◡‿◡)");
+                if(color !== ""){
+                    alert("Mine is red!（づ￣3￣）づ╭❤️～" + color);
+                    document.getElementById("color").innerHTML = "COOLIEO" + "\^o^/";
+                } else {
+                    alert("O_O Imput Needed")
+                }
+            }
+            whoyou()
+            showzzz()
+            animalzzz()
+            colorzzz()
+        </script>
+    </body>
+</html>
