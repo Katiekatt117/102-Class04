@@ -1,10 +1,23 @@
 body{
     background-color: pink;
-    background-image: url(cherry-blossom-tree-12.jpg);
+    background-image: url(Images/cherry-blossom-tree-12.jpg);
     max-width: 100%;
     max-height: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
+    color:rgb(70, 0, 15);
+    font-size: 25px;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+    vertical-align: top;
 }
 
 
@@ -13,3 +26,39 @@ nav {
     justify-content: space-between;
 }
 
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: pink; /* Grey background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+
+   /* Welcome column */
+   .welcome {
+    flex: 70%; /* Set the width of the main content */
+    background-color: rgb(255, 0, 89); /* White background color */
+    padding: 20px; /* Some padding */
+   }
+   img{
+    width: 59%;
+   }
+   
